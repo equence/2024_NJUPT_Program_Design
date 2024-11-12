@@ -149,7 +149,7 @@
    <sender>pushButtonLogin</sender>
    <signal>clicked()</signal>
    <receiver>Login</receiver>
-   <slot>judge()</slot>
+   <slot>judge_Password()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>206</x>
@@ -161,8 +161,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>comboBoxUsertype</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Login</receiver>
+   <slot>judge_Usertype()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
-  <slot>judge()</slot>
+  <slot>judge_Password()</slot>
+  <slot>judge_Usertype()</slot>
  </slots>
 </ui>

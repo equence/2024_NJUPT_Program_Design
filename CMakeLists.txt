@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
-
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${PROJECT_SOURCE_DIR}/form)
 set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/mingw_64")
 
 include_directories(SYSTEM cmake-build-debug/2024_NJUPT_Program_Design_autogen/include)
@@ -20,7 +20,13 @@ find_package(Qt6 COMPONENTS
 add_executable(2024_NJUPT_Program_Design main.cpp
         login.cpp
         login.h
-        login.ui)
+        form/login.ui
+        sys_admin/sys_admin_mainwindow.cpp
+        sys_admin/sys_admin_mainwindow.h
+        form/sys_admin_mainwindow.ui
+        sys_admin/management_of_participating_departments.cpp
+        sys_admin/management_of_participating_departments.h
+        form/management_of_participating_departments.ui)
 target_link_libraries(2024_NJUPT_Program_Design
         Qt::Core
         Qt::Gui

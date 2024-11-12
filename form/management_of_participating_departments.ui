@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>management_of_participating_departments</class>
+ <widget class="QWidget" name="management_of_participating_departments">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>management_of_participating_departments</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_Add">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>10</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新增</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Delete">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>40</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Change">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>70</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Search">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>100</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>220</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>院系编码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>院系名称</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCode">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>150</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditName">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>190</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>院系编码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>190</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>院系名称</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>290</y>
+     <width>191</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>初始化随机数据</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>management_of_participating_departments</receiver>
+   <slot>pushButton_Init_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Add</sender>
+   <signal>clicked()</signal>
+   <receiver>management_of_participating_departments</receiver>
+   <slot>pushButton_Add_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Delete</sender>
+   <signal>clicked()</signal>
+   <receiver>management_of_participating_departments</receiver>
+   <slot>pushButton_Delete_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Change</sender>
+   <signal>clicked()</signal>
+   <receiver>management_of_participating_departments</receiver>
+   <slot>pushButton_Change_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>337</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Search</sender>
+   <signal>clicked()</signal>
+   <receiver>management_of_participating_departments</receiver>
+   <slot>pushButton_Search_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>132</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_Init_clicked()</slot>
+  <slot>pushButton_Add_clicked()</slot>
+  <slot>pushButton_Delete_clicked()</slot>
+  <slot>pushButton_Change_clicked()</slot>
+  <slot>pushButton_Search_clicked()</slot>
+ </slots>
+</ui>

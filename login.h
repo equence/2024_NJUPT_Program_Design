@@ -23,7 +23,8 @@ private:
     Ui::Login *ui;
 
 public slots:
-    void judge();
+    void judge_Password();
+    void judge_Usertype();
 };
 
 
