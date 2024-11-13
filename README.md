@@ -96,14 +96,15 @@
 
 前端采用Qt6搭建UI框架，后端采用SQLite和先进的txt数据库存取数据。
 
-| 文件夹          | 用途       |
-| --------------- | ---------- |
-| ./sys_admin     | 系统管理员 |
-| ./college_admin | 学院管理员 |
-| ./athlete       | 运动员     |
-| ./referee       | 裁判       |
-| ./form          | ui文件     |
-| ./files         | 数据库文件 |
+| 文件夹              | 用途          |
+| ------------------- | ------------- |
+| ./sys_admin         | 系统管理员    |
+| ./college_admin     | 学院管理员    |
+| ./athlete           | 运动员        |
+| ./referee           | 裁判          |
+| ./form              | ui文件        |
+| ./files             | 数据库文件    |
+| ./cmake-build-debug | cmake自动生成 |
 
 ## Todo
 
