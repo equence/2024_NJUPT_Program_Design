@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>management_of_competition_cell</class>
+ <widget class="QWidget" name="management_of_competition_cell">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>management_of_competition_cell</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>比赛名称</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>所属组别</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Name">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Group">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>教工老年男子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教工老年女子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教工中年男子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教工中年女子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教工青年男子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教工青年女子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>研究生男子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>研究生女子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>本科生男子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>本科生女子组</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>男女混合</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>项目性质</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>名次</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Save">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>230</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Nature">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>100</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>个人</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>团体</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>50</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>得奖情况</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Count">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_Award">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>180</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Save</sender>
+   <signal>clicked()</signal>
+   <receiver>management_of_competition_cell</receiver>
+   <slot>pushButton_Save_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>337</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButton_Save_clicked()</slot>
+ </slots>
+</ui>

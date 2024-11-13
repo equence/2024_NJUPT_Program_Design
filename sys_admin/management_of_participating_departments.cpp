@@ -11,50 +11,53 @@
 management_of_participating_departments::management_of_participating_departments(QWidget *parent) :
     QWidget(parent), ui(new Ui::management_of_participating_departments) {
     ui->setupUi(this);
+    departments_db = QSqlDatabase::addDatabase("QSQLITE");
+    departments_db.setDatabaseName("D:/CLionProjects/2024_NJUPT_Program_Design/files/sqlite.db");
+    departments_db.open();
+    refreshTable();
 }
 
 management_of_participating_departments::~management_of_participating_departments() {
+    departments_db.close();
     delete ui;
 }
 
 void management_of_participating_departments::pushButton_Init_clicked() {
-    //创建3行
-    ui->tableWidget->insertRow(0);
-    ui->tableWidget->insertRow(1);
-    ui->tableWidget->insertRow(2);
-    //添加数据
-    ui->tableWidget->setItem(0, 0, new QTableWidgetItem("001"));
-    ui->tableWidget->setItem(0, 1, new QTableWidgetItem("计算机学院"));
-    ui->tableWidget->setItem(1, 0, new QTableWidgetItem("002"));
-    ui->tableWidget->setItem(1, 1, new QTableWidgetItem("软件学院"));
-    ui->tableWidget->setItem(2, 0, new QTableWidgetItem("003"));
-    ui->tableWidget->setItem(2, 1, new QTableWidgetItem("信息学院"));
+    QSqlQuery query;
+    queryString = QString("insert into departments(院系编码, 院系名称) values('001', '计算机学院')");
+    query.exec(queryString);
+    queryString = QString("insert into departments(院系编码, 院系名称) values('002', '软件学院')");
+    query.exec(queryString);
+    queryString = QString("insert into departments(院系编码, 院系名称) values('003', '信息学院')");
+    query.exec(queryString);
+    refreshTable();
 }
 
 void management_of_participating_departments::pushButton_Add_clicked() {
-    //获取行数
-    int row = ui->tableWidget->rowCount();
-    //添加一行
-    //注意此处的参数是 “下标”,表示你新增之后这一行是第几行
-    ui->tableWidget->insertRow(row);
-    //添加数据
-    ui->tableWidget->setItem(row, 0, new QTableWidgetItem(ui->lineEditCode->text()));
-    ui->tableWidget->setItem(row, 1, new QTableWidgetItem(ui->lineEditName->text()));
+    QSqlQuery query;
+    queryString = QString("insert into departments(院系编码, 院系名称) values('%1', '%2')")
+            .arg(ui->lineEditCode->text()).arg(ui->lineEditName->text());
+    query.exec(queryString);
+    refreshTable();
 }
 
 void management_of_participating_departments::pushButton_Delete_clicked() {
     //获取选中的行
     int curRow = ui->tableWidget->currentRow();
-    //删除选中的行
-    ui->tableWidget->removeRow(curRow);
+    QSqlQuery query;
+    queryString = QString("delete from departments where 院系编码 = '%1'").arg(ui->tableWidget->item(curRow, 0)->text());
+    query.exec(queryString);
+    refreshTable();
 }
 
-void management_of_participating_departments::pushButton_Change_clicked() {
+void management_of_participating_departments::pushButton_Modify_clicked() {
     //获取选中的行
     int curRow = ui->tableWidget->currentRow();
-    //修改数据
-    ui->tableWidget->setItem(curRow, 0, new QTableWidgetItem(ui->lineEditCode->text()));
-    ui->tableWidget->setItem(curRow, 1, new QTableWidgetItem(ui->lineEditName->text()));
+    queryString = QString("update departments set 院系编码 = '%1', 院系名称 = '%2' where 院系编码 = '%3'")
+            .arg(ui->lineEditCode->text()).arg(ui->lineEditName->text()).arg(ui->tableWidget->item(curRow, 0)->text());
+    QSqlQuery query;
+    query.exec(queryString);
+    refreshTable();
 }
 
 void management_of_participating_departments::pushButton_Search_clicked() {
@@ -74,5 +77,20 @@ void management_of_participating_departments::pushButton_Search_clicked() {
             ui->tableWidget->setCurrentCell(i, 0);
             break;
         }
+    }
+}
+
+void management_of_participating_departments::refreshTable() {
+    ui->tableWidget->setRowCount(0);
+    queryString = QString("select * from departments");
+    QSqlQuery query(queryString);
+    int curRow = 0;
+    while(query.next()) {
+        QString code = query.value("院系编码").toString();
+        QString name = query.value("院系名称").toString();
+        ui->tableWidget->insertRow(curRow);
+        ui->tableWidget->setItem(curRow, 0, new QTableWidgetItem(code));
+        ui->tableWidget->setItem(curRow, 1, new QTableWidgetItem(name));
+        curRow++;
     }
 }

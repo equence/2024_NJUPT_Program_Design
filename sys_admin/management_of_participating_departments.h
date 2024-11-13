@@ -6,7 +6,7 @@
 #define MANAGEMENT_OF_PARTICIPATING_DEPARTMENTS_H
 
 #include <QWidget>
-
+#include <QSqlQuery>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class management_of_participating_departments; }
@@ -18,15 +18,21 @@ Q_OBJECT
 public:
     explicit management_of_participating_departments(QWidget *parent = nullptr);
     ~management_of_participating_departments() override;
+    void refreshTable();
+    //定义一个变量，用于增删改查
+    QString queryString;
+    QSqlDatabase departments_db;
+
 
 private:
     Ui::management_of_participating_departments *ui;
+
 
 public slots:
     void pushButton_Init_clicked();
     void pushButton_Add_clicked();
     void pushButton_Delete_clicked();
-    void pushButton_Change_clicked();
+    void pushButton_Modify_clicked();
     void pushButton_Search_clicked();
 
 };
