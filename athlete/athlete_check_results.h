@@ -9,6 +9,7 @@
 #define ATHLETE_CHECK_RESULTS_H
 
 #include <QWidget>
+#include <QSqlQuery>
 
 
 QT_BEGIN_NAMESPACE
@@ -21,6 +22,13 @@ Q_OBJECT
 public:
     explicit athlete_check_results(QWidget *parent = nullptr);
     ~athlete_check_results() override;
+    //定义一个变量，用于增删改查
+    QString queryString;
+    QSqlDatabase results_db;
+    void refreshTable();
+
+    public slots:
+    void slot1();
 
 private:
     Ui::athlete_check_results *ui;

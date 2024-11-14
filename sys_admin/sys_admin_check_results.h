@@ -24,7 +24,10 @@ public:
     //定义一个变量，用于增删改查
     QString queryString;
     QSqlDatabase results_db;
-
+public slots:
+    void slot1();
+    void slot2();
+    void slot3();
 private:
     Ui::sys_admin_check_results *ui;
 };

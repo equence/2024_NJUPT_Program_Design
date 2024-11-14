@@ -11,11 +11,13 @@
 #include "ui_athlete_complaint.h"
 #include <QMessageBox>
 
+extern QString userCode;
+
 athlete_complaint::athlete_complaint(QWidget *parent) :
     QWidget(parent), ui(new Ui::athlete_complaint) {
     ui->setupUi(this);
     results_db = QSqlDatabase::addDatabase("QSQLITE");
-    results_db.setDatabaseName("D:/CLionProjects/2024_NJUPT_Program_Design/files/sqlite.db");
+    results_db.setDatabaseName("../files/sqlite.db");
     results_db.open();
     refreshTable();
 }
@@ -34,7 +36,7 @@ void athlete_complaint::slot1() {
 
 void athlete_complaint::refreshTable() {
     ui->tableWidget->setRowCount(0);
-    queryString = QString("select * from results");
+    queryString = QString("select * from results where 运动员号码 = '%1' and 状态 = '成绩公示'").arg(userCode);
     QSqlQuery query(queryString);
     int curRow = 0;
     while(query.next()) {

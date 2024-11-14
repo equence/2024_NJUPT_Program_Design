@@ -8,6 +8,8 @@
 #include "ui_college_admin_complaint.h"
 #include <QMessageBox>
 
+extern QString userCode;
+
 college_admin_complaint::college_admin_complaint(QWidget *parent) :
     QWidget(parent), ui(new Ui::college_admin_complaint) {
     ui->setupUi(this);
@@ -32,7 +34,7 @@ void college_admin_complaint::slot1() {
 
 void college_admin_complaint::refreshTable() {
     ui->tableWidget->setRowCount(0);
-    queryString = QString("select * from results where 状态 = '等待学院管理员审核'");
+    queryString = QString("select * from results where 状态 = '等待学院管理员审核' and 院系编号 = '%1'").arg(userCode);
     QSqlQuery query(queryString);
     int curRow = 0;
     while(query.next()) {

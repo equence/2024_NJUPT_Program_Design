@@ -9,7 +9,7 @@
 #include <QMessageBox>
 
 #include "ui_sys_admin_handle_complaint.h"
-
+#include "update_scores.h"
 
 sys_admin_handle_complaint::sys_admin_handle_complaint(QWidget *parent) :
     QWidget(parent), ui(new Ui::sys_admin_handle_complaint) {
@@ -45,6 +45,7 @@ void sys_admin_handle_complaint::refreshTable() {
     ui->tableWidget->setRowCount(0);
     queryString = QString("select * from results where 状态 = '等待总管理员审核'");
     QSqlQuery query(queryString);
+    updateDepartmentScores();
     int curRow = 0;
     while(query.next()) {
         QString number = query.value("运动员号码").toString();
@@ -65,4 +66,5 @@ void sys_admin_handle_complaint::refreshTable() {
         ui->tableWidget->setItem(curRow, 6, new QTableWidgetItem(status));
         curRow++;
     }
+
 }

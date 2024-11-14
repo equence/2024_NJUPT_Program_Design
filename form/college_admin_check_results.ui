@@ -131,7 +131,7 @@
  <connections>
   <connection>
    <sender>comboBox</sender>
-   <signal>currentTextChanged(QString)</signal>
+   <signal>activated(int)</signal>
    <receiver>college_admin_check_results</receiver>
    <slot>slot1()</slot>
    <hints>

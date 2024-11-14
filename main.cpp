@@ -12,6 +12,7 @@ int main(int argc, char *argv[]) {
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("../files/sqlite.db");
+    db.open();
     updateRankings(db);
     updateDepartmentScores();
     return QApplication::exec();

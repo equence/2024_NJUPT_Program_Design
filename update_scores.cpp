@@ -19,7 +19,7 @@ bool compareDepartmentScores(const DepartmentScore &a, const DepartmentScore &b)
 void updateDepartmentScores() {
     // 打开数据库连接
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
+    db.setDatabaseName("../files/sqlite.db");
 
     if (!db.open()) {
         std::cerr << "Failed to open the database." << std::endl;
@@ -62,5 +62,5 @@ void updateDepartmentScores() {
     }
 
     // 关闭数据库连接
-    db.close();
+    //db.close();
 }
