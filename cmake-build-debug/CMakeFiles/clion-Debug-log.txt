@@ -1,0 +1,5 @@
+C:\Qt\Tools\CMake_64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design -B C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug

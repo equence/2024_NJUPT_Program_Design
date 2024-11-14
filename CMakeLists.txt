@@ -84,6 +84,10 @@ add_executable(2024_NJUPT_Program_Design main.cpp
         form/referee_handle_complaint_cell.ui
         result_sort.cpp
         result_sort.h
+        update_scores.cpp
+        update_scores.h
+        update_scores.h
+        update_scores.cpp
 
 )
 target_link_libraries(2024_NJUPT_Program_Design
