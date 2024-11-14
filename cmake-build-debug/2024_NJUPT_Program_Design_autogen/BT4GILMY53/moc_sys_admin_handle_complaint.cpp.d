@@ -1,5 +1,5 @@
-D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/BT4GILMY53/moc_sys_admin_handle_complaint.cpp: D:/Desktop/program/2024_NJUPT_Program_Design-master/sys_admin/sys_admin_handle_complaint.h \
-  D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
+C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/BT4GILMY53/moc_sys_admin_handle_complaint.cpp: C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_handle_complaint.h \
+  C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \

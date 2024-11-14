@@ -478,4 +478,8 @@ CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/management_of_competition.cpp
  C:/Qt/6.8.0/mingw_64/include/QtCore/qitemselectionmodel.h \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QTableWidget \
  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtablewidget.h \
- C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtableview.h
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtableview.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.8.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h

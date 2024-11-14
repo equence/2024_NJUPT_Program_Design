@@ -1,5 +1,5 @@
-D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/IVBR36VHBM/moc_college_admin_check_results.cpp: D:/Desktop/program/2024_NJUPT_Program_Design-master/college_admin/college_admin_check_results.h \
-  D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
+C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/IVBR36VHBM/moc_college_admin_check_results.cpp: C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/college_admin/college_admin_check_results.h \
+  C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \

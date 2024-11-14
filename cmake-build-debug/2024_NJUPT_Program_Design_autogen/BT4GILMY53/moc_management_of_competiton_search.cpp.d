@@ -1,5 +1,5 @@
-D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/BT4GILMY53/moc_management_of_competiton_search.cpp: D:/Desktop/program/2024_NJUPT_Program_Design-master/sys_admin/management_of_competiton_search.h \
-  D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
+C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/BT4GILMY53/moc_management_of_competiton_search.cpp: C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/sys_admin/management_of_competiton_search.h \
+  C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \

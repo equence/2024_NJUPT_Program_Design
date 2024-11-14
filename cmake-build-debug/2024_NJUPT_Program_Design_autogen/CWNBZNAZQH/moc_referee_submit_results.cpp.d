@@ -1,5 +1,5 @@
-D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/CWNBZNAZQH/moc_referee_submit_results.cpp: D:/Desktop/program/2024_NJUPT_Program_Design-master/referee/referee_submit_results.h \
-  D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
+C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/CWNBZNAZQH/moc_referee_submit_results.cpp: C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/referee/referee_submit_results.h \
+  C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -404,4 +404,4 @@ D:/Desktop/program/2024_NJUPT_Program_Design-master/cmake-build-debug/2024_NJUPT
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  D:/Desktop/program/2024_NJUPT_Program_Design-master/referee/referee_submit_results_cell.h
+  C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/referee/referee_submit_results_cell.h

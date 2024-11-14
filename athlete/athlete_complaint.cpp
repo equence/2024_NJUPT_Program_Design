@@ -15,7 +15,7 @@ athlete_complaint::athlete_complaint(QWidget *parent) :
     QWidget(parent), ui(new Ui::athlete_complaint) {
     ui->setupUi(this);
     results_db = QSqlDatabase::addDatabase("QSQLITE");
-    results_db.setDatabaseName("D:/CLionProjects/2024_NJUPT_Program_Design/files/sqlite.db");
+    results_db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
     results_db.open();
     refreshTable();
 }
@@ -26,6 +26,12 @@ athlete_complaint::~athlete_complaint() {
 
 void athlete_complaint::slot1() {
     int curRow = ui->tableWidget->currentRow();
+
+    if (curRow < 0) {
+        QMessageBox::warning(this, tr("提交失败"), tr("请选择一项！"), QMessageBox::Ok);
+        return;
+    }
+
     queryString = QString("update results set 状态 = '等待学院管理员审核' where 运动员号码 = '%1'").arg(ui->tableWidget->item(curRow, 0)->text());
     QSqlQuery query(queryString);
     refreshTable();
