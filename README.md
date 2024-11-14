@@ -106,6 +106,22 @@
 | ./files             | 数据库文件    |
 | ./cmake-build-debug | cmake自动生成 |
 
+## 构建
+
+**请提前安装Qt环境，并在安装时勾选MinGW和SOURCE。**
+
+1. 克隆仓库，并用CLion打开项目。
+
+   ```
+   git clone https://github.com/equence/2024_NJUPT_Program_Design.git
+   ```
+
+2. 配置CMakeLists.txt，修改**set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/mingw_64")**为自己的Qt路径。
+
+3. 复制**.\Qt\6.8.0\mingw_64\plugins\sqldrivers**（修改为自己的Qt路径）文件夹到工程目录下cmake-build-debug文件夹里。
+
+4. 点击构建运行。
+
 ## Todo
 
 选作要求一点没动，来不及了
