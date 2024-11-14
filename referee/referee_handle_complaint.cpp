@@ -17,7 +17,7 @@ referee_handle_complaint::referee_handle_complaint(QWidget *parent) :
     ui->setupUi(this);
 
     results_db = QSqlDatabase::addDatabase("QSQLITE");
-    results_db.setDatabaseName("D:/CLionProjects/2024_NJUPT_Program_Design/files/sqlite.db");
+    results_db.setDatabaseName("../files/sqlite.db");
     results_db.open();
     refreshTable();
 

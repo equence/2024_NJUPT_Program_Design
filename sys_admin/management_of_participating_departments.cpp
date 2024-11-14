@@ -7,12 +7,12 @@
 #include "management_of_participating_departments.h"
 #include "ui_management_of_participating_departments.h"
 #include <QTableWidget>
-
+#include <QMessageBox>
 management_of_participating_departments::management_of_participating_departments(QWidget *parent) :
     QWidget(parent), ui(new Ui::management_of_participating_departments) {
     ui->setupUi(this);
     departments_db = QSqlDatabase::addDatabase("QSQLITE");
-    departments_db.setDatabaseName("D:/CLionProjects/2024_NJUPT_Program_Design/files/sqlite.db");
+    departments_db.setDatabaseName("../files/sqlite.db");
     departments_db.open();
     refreshTable();
 }
@@ -42,23 +42,55 @@ void management_of_participating_departments::pushButton_Add_clicked() {
 }
 
 void management_of_participating_departments::pushButton_Delete_clicked() {
-    //获取选中的行
+    // 获取选中的行
     int curRow = ui->tableWidget->currentRow();
+
+    // 检查是否有选中行
+    if (curRow < 0) {
+        QMessageBox::warning(this, tr("删除失败"), tr("请选择一行进行删除！"), QMessageBox::Ok);
+        return;
+    }
+
     QSqlQuery query;
     queryString = QString("delete from departments where 院系编码 = '%1'").arg(ui->tableWidget->item(curRow, 0)->text());
     query.exec(queryString);
     refreshTable();
 }
 
+
 void management_of_participating_departments::pushButton_Modify_clicked() {
-    //获取选中的行
+    // 获取选中的行
     int curRow = ui->tableWidget->currentRow();
+
+    // 检查是否有选中行
+    if (curRow < 0) {
+        QMessageBox::warning(this, tr("修改失败"), tr("请选择一行进行修改！"), QMessageBox::Ok);
+        return;
+    }
+
+    // 获取用户输入的院系编码和院系名称
+    QString code = ui->lineEditCode->text();
+    QString name = ui->lineEditName->text();
+
+    // 检查院系编码和院系名称是否为空，并显示相应的提示
+    if (code.isEmpty() && name.isEmpty()) {
+        QMessageBox::warning(this, tr("修改失败"), tr("请输入信息！"), QMessageBox::Ok);
+        return;
+    } else if (code.isEmpty()) {
+        QMessageBox::warning(this, tr("修改失败"), tr("院系编码不能为空！"), QMessageBox::Ok);
+        return;
+    } else if (name.isEmpty()) {
+        QMessageBox::warning(this, tr("修改失败"), tr("院系名称不能为空！"), QMessageBox::Ok);
+        return;
+    }
+
     queryString = QString("update departments set 院系编码 = '%1', 院系名称 = '%2' where 院系编码 = '%3'")
-            .arg(ui->lineEditCode->text()).arg(ui->lineEditName->text()).arg(ui->tableWidget->item(curRow, 0)->text());
+            .arg(code).arg(name).arg(ui->tableWidget->item(curRow, 0)->text());
     QSqlQuery query;
     query.exec(queryString);
     refreshTable();
 }
+
 
 void management_of_participating_departments::pushButton_Search_clicked() {
     //获取行数
