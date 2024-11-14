@@ -433,4 +433,5 @@ CMakeFiles/2024_NJUPT_Program_Design.dir/main.cpp.obj: \
  C:/Qt/6.8.0/mingw_64/include/QtCore/qmetaobject.h \
  C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\result_sort.h \
  C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.8.0/mingw_64/include/QtCore/qstring.h
+ C:/Qt/6.8.0/mingw_64/include/QtCore/qstring.h \
+ C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\update_scores.h

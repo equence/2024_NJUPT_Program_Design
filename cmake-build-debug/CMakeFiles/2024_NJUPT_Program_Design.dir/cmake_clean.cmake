@@ -51,6 +51,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_mainwindow.cpp.obj.d"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj.d"
+  "CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj"
+  "CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj.d"
   "lib2024_NJUPT_Program_Design.dll.a"
 )
 

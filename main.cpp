@@ -3,6 +3,7 @@
 #include "login.h"
 #include <QSqlDatabase>
 #include "result_sort.h"
+#include "update_scores.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
@@ -12,6 +13,6 @@ int main(int argc, char *argv[]) {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
     updateRankings(db);
-
+    updateDepartmentScores();
     return QApplication::exec();
 }

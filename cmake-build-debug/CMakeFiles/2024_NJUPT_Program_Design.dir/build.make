@@ -413,6 +413,21 @@ CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\result_sort.cpp -o CMakeFiles\2024_NJUPT_Program_Design.dir\result_sort.cpp.s
 
+CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj: CMakeFiles/2024_NJUPT_Program_Design.dir/flags.make
+CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj: CMakeFiles/2024_NJUPT_Program_Design.dir/includes_CXX.rsp
+CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj: C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/update_scores.cpp
+CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj: CMakeFiles/2024_NJUPT_Program_Design.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj -MF CMakeFiles\2024_NJUPT_Program_Design.dir\update_scores.cpp.obj.d -o CMakeFiles\2024_NJUPT_Program_Design.dir\update_scores.cpp.obj -c C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\update_scores.cpp
+
+CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\update_scores.cpp > CMakeFiles\2024_NJUPT_Program_Design.dir\update_scores.cpp.i
+
+CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\update_scores.cpp -o CMakeFiles\2024_NJUPT_Program_Design.dir\update_scores.cpp.s
+
 # Object files for target 2024_NJUPT_Program_Design
 2024_NJUPT_Program_Design_OBJECTS = \
 "CMakeFiles/2024_NJUPT_Program_Design.dir/2024_NJUPT_Program_Design_autogen/mocs_compilation.cpp.obj" \
@@ -437,7 +452,8 @@ CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.s: cmake_force
 "CMakeFiles/2024_NJUPT_Program_Design.dir/referee/referee_submit_results_cell.cpp.obj" \
 "CMakeFiles/2024_NJUPT_Program_Design.dir/referee/referee_handle_complaint.cpp.obj" \
 "CMakeFiles/2024_NJUPT_Program_Design.dir/referee/referee_handle_complaint_cell.cpp.obj" \
-"CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.obj"
+"CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.obj" \
+"CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj"
 
 # External object files for target 2024_NJUPT_Program_Design
 2024_NJUPT_Program_Design_EXTERNAL_OBJECTS =
@@ -465,6 +481,7 @@ CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.s: cmake_force
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/referee/referee_handle_complaint.cpp.obj
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/referee/referee_handle_complaint_cell.cpp.obj
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.obj
+2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/build.make
 2024_NJUPT_Program_Design.exe: C:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a
 2024_NJUPT_Program_Design.exe: C:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a
@@ -473,7 +490,7 @@ CMakeFiles/2024_NJUPT_Program_Design.dir/result_sort.cpp.s: cmake_force
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/linkLibs.rsp
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/objects1.rsp
 2024_NJUPT_Program_Design.exe: CMakeFiles/2024_NJUPT_Program_Design.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable 2024_NJUPT_Program_Design.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable 2024_NJUPT_Program_Design.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\2024_NJUPT_Program_Design.dir\link.txt --verbose=$(VERBOSE)
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/plugins/platforms/
 	C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Qt/6.8.0/mingw_64/plugins/platforms/qwindows.dll C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/plugins/platforms/
