@@ -1,4 +1,4 @@
 admin admin 0 0
-college admin 1 0
-athlete admin 2 0
-referee admin 3 0
+college admin 1 001
+athlete admin 2 001
+referee admin 3 001

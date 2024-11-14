@@ -31,6 +31,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_handle_complaint.cpp" "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_handle_complaint.cpp.obj" "gcc" "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_handle_complaint.cpp.obj.d"
   "D:/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_mainwindow.cpp" "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_mainwindow.cpp.obj" "gcc" "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_mainwindow.cpp.obj.d"
   "D:/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_review_results.cpp" "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj" "gcc" "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj.d"
+  "D:/CLionProjects/2024_NJUPT_Program_Design/update_scores.cpp" "CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj" "gcc" "CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

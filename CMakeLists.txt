@@ -8,7 +8,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${PROJECT_SOURCE_DIR}/form)
 set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/mingw_64")
 
-include_directories(SYSTEM cmake-build-debug/2024_NJUPT_Program_Design_autogen/include)
+include_directories(SYSTEM cmake-build-debug/2024_NJUPT_Program_Design_autogen/include ${PROJECT_SOURCE_DIR})
 include_directories(2024_NJUPT_Program_Design ${Qt6Widgets_INCLUDE_DIRS} ${Qt6Core_INCLUDE_DIRS} ${Qt6Gui_INCLUDE_DIRS})
 
 find_package(Qt6 COMPONENTS
@@ -84,6 +84,10 @@ add_executable(2024_NJUPT_Program_Design main.cpp
         form/referee_handle_complaint_cell.ui
         result_sort.cpp
         result_sort.h
+        update_scores.cpp
+        update_scores.h
+        update_scores.h
+        update_scores.cpp
 
 )
 target_link_libraries(2024_NJUPT_Program_Design

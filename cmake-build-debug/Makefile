@@ -706,6 +706,30 @@ sys_admin/sys_admin_review_results.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_NJUPT_Program_Design.dir\build.make CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.s
 .PHONY : sys_admin/sys_admin_review_results.cpp.s
 
+update_scores.obj: update_scores.cpp.obj
+.PHONY : update_scores.obj
+
+# target to build an object file
+update_scores.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_NJUPT_Program_Design.dir\build.make CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj
+.PHONY : update_scores.cpp.obj
+
+update_scores.i: update_scores.cpp.i
+.PHONY : update_scores.i
+
+# target to preprocess a source file
+update_scores.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_NJUPT_Program_Design.dir\build.make CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.i
+.PHONY : update_scores.cpp.i
+
+update_scores.s: update_scores.cpp.s
+.PHONY : update_scores.s
+
+# target to generate assembly for a file
+update_scores.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2024_NJUPT_Program_Design.dir\build.make CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.s
+.PHONY : update_scores.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -786,6 +810,9 @@ help:
 	@echo ... sys_admin/sys_admin_review_results.obj
 	@echo ... sys_admin/sys_admin_review_results.i
 	@echo ... sys_admin/sys_admin_review_results.s
+	@echo ... update_scores.obj
+	@echo ... update_scores.i
+	@echo ... update_scores.s
 .PHONY : help
 
 

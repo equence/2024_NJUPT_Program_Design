@@ -24,7 +24,7 @@ public:
     {	char ID[20];
         char name[20];
         int type;
-        int rank;
+        char rank[20];
     }STU;
     int check_password(char *Name ,char *password , int type, STU st[]);
 

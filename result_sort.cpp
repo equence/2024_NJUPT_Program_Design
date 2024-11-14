@@ -27,10 +27,10 @@ bool compareResults(const AthleteResult &a, const AthleteResult &b) {
 }
 
 void updateRankings(QSqlDatabase &db) {
-    if (!db.open()) {
-        std::cerr << "Failed to open the database." << std::endl;
-        return;
-    }
+    // if (!db.open()) {
+    //     std::cerr << "Failed to open the database." << std::endl;
+    //     return;
+    // }
 
     QSqlQuery query("SELECT * FROM results");
     std::vector<AthleteResult> results;
@@ -73,5 +73,5 @@ void updateRankings(QSqlDatabase &db) {
         updateQuery.exec();
     }
 
-    db.close();
+    //db.close();
 }

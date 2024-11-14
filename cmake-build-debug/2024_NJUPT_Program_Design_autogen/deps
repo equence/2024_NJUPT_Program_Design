@@ -331,6 +331,8 @@
 	D:/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_mainwindow.h \
 	D:/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_review_results.cpp \
 	D:/CLionProjects/2024_NJUPT_Program_Design/sys_admin/sys_admin_review_results.h \
+	D:/CLionProjects/2024_NJUPT_Program_Design/update_scores.cpp \
+	D:/CLionProjects/2024_NJUPT_Program_Design/update_scores.h \
 	D:/Qt/6.8.0/mingw_64/include/QtCore/QVariant \
 	D:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
 	D:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \

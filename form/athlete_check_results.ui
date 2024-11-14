@@ -36,7 +36,7 @@
     <string>查询项目</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget_byAthelte">
+  <widget class="QTableWidget" name="tableWidget_byAthlete">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -128,5 +128,25 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(int)</signal>
+   <receiver>athlete_check_results</receiver>
+   <slot>slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot1()</slot>
+ </slots>
 </ui>

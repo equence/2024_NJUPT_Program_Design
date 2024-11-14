@@ -8,6 +8,9 @@
 #include "ui_management_of_participating_departments.h"
 #include <QTableWidget>
 #include <QMessageBox>
+
+#include "update_scores.h"
+
 management_of_participating_departments::management_of_participating_departments(QWidget *parent) :
     QWidget(parent), ui(new Ui::management_of_participating_departments) {
     ui->setupUi(this);
@@ -24,18 +27,18 @@ management_of_participating_departments::~management_of_participating_department
 
 void management_of_participating_departments::pushButton_Init_clicked() {
     QSqlQuery query;
-    queryString = QString("insert into departments(院系编码, 院系名称) values('001', '计算机学院')");
+    queryString = QString("insert into departments(院系编号, 院系名称) values('001', '计算机学院')");
     query.exec(queryString);
-    queryString = QString("insert into departments(院系编码, 院系名称) values('002', '软件学院')");
+    queryString = QString("insert into departments(院系编号, 院系名称) values('002', '软件学院')");
     query.exec(queryString);
-    queryString = QString("insert into departments(院系编码, 院系名称) values('003', '信息学院')");
+    queryString = QString("insert into departments(院系编号, 院系名称) values('003', '信息学院')");
     query.exec(queryString);
     refreshTable();
 }
 
 void management_of_participating_departments::pushButton_Add_clicked() {
     QSqlQuery query;
-    queryString = QString("insert into departments(院系编码, 院系名称) values('%1', '%2')")
+    queryString = QString("insert into departments(院系编号, 院系名称) values('%1', '%2')")
             .arg(ui->lineEditCode->text()).arg(ui->lineEditName->text());
     query.exec(queryString);
     refreshTable();
@@ -52,7 +55,7 @@ void management_of_participating_departments::pushButton_Delete_clicked() {
     }
 
     QSqlQuery query;
-    queryString = QString("delete from departments where 院系编码 = '%1'").arg(ui->tableWidget->item(curRow, 0)->text());
+    queryString = QString("delete from departments where 院系编号 = '%1'").arg(ui->tableWidget->item(curRow, 0)->text());
     query.exec(queryString);
     refreshTable();
 }
@@ -84,7 +87,7 @@ void management_of_participating_departments::pushButton_Modify_clicked() {
         return;
     }
 
-    queryString = QString("update departments set 院系编码 = '%1', 院系名称 = '%2' where 院系编码 = '%3'")
+    queryString = QString("update departments set 院系编号 = '%1', 院系名称 = '%2' where 院系编号 = '%3'")
             .arg(code).arg(name).arg(ui->tableWidget->item(curRow, 0)->text());
     QSqlQuery query;
     query.exec(queryString);
@@ -118,11 +121,12 @@ void management_of_participating_departments::refreshTable() {
     QSqlQuery query(queryString);
     int curRow = 0;
     while(query.next()) {
-        QString code = query.value("院系编码").toString();
+        QString code = query.value("院系编号").toString();
         QString name = query.value("院系名称").toString();
         ui->tableWidget->insertRow(curRow);
         ui->tableWidget->setItem(curRow, 0, new QTableWidgetItem(code));
         ui->tableWidget->setItem(curRow, 1, new QTableWidgetItem(name));
         curRow++;
     }
+    updateDepartmentScores();
 }

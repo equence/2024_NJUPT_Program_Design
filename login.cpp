@@ -19,6 +19,7 @@
 #define referee 3
 
 int usertype = 0;
+QString userCode;
 Login::STU st[N];
 
 Login::Login(QWidget *parent) :
@@ -47,6 +48,7 @@ void Login::judge_Password() {
             case college_admin: {
                 auto *college = new college_mainwindow;
                 college->show();
+
                 break;
             }
             case athlete: {
@@ -80,10 +82,10 @@ int Login::check_password(char *Name ,char *password , int type, STU st[]) {
         exit(1);
     }
 
-    fscanf( fp, "%s%s%d%d", st[i].name, st[i].ID, &st[i].type,&st[i].rank) ;
+    fscanf( fp, "%s%s%d%s", st[i].name, st[i].ID, &st[i].type,&st[i].rank) ;
     while( !feof(fp) )
     {   i++;
-        fscanf( fp, "%s%s%d%d", st[i].name, st[i].ID, &st[i].type,&st[i].rank);
+        fscanf( fp, "%s%s%d%s", st[i].name, st[i].ID, &st[i].type,&st[i].rank);
     }
     fclose(fp);
     int num = 0;
@@ -93,8 +95,10 @@ int Login::check_password(char *Name ,char *password , int type, STU st[]) {
         {
             if(strcmp(password, st[num].ID) == 0)
             {
-                if (type == st[num].type)
+                if (type == st[num].type) {
+                    userCode = st[num].rank;
                     return 1;
+                }
             }
             else
             {

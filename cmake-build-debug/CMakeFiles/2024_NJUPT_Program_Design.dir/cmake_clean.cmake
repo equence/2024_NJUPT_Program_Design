@@ -48,6 +48,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_mainwindow.cpp.obj.d"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj.d"
+  "CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj"
+  "CMakeFiles/2024_NJUPT_Program_Design.dir/update_scores.cpp.obj.d"
   "2024_NJUPT_Program_Design_autogen"
   "CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/ParseCache.txt"

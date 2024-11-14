@@ -6,7 +6,7 @@
 
 #include "sys_admin_review_results.h"
 #include "ui_sys_admin_review_results.h"
-
+#include "update_scores.h"
 
 sys_admin_review_results::sys_admin_review_results(QWidget *parent) :
     QWidget(parent), ui(new Ui::sys_admin_review_results) {
@@ -65,6 +65,7 @@ void sys_admin_review_results::refreshTable() {
         ui->tableWidget->setItem(curRow, 4, new QTableWidgetItem(score));
         ui->tableWidget->setItem(curRow, 5, new QTableWidgetItem(ranking));
         ui->tableWidget->setItem(curRow, 6, new QTableWidgetItem(complaint));
+        qDebug() << number << name << college << event << score << ranking << complaint;
         curRow++;
     }
 }
