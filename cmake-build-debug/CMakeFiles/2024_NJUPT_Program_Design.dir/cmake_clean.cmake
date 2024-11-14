@@ -2,9 +2,6 @@ file(REMOVE_RECURSE
   "2024_NJUPT_Program_Design.exe"
   "2024_NJUPT_Program_Design.exe.manifest"
   "2024_NJUPT_Program_Design.pdb"
-  "2024_NJUPT_Program_Design_autogen"
-  "CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenUsed.txt"
-  "CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/ParseCache.txt"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/2024_NJUPT_Program_Design_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/2024_NJUPT_Program_Design_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/athlete/athlete_check_results.cpp.obj"
@@ -51,6 +48,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_mainwindow.cpp.obj.d"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj"
   "CMakeFiles/2024_NJUPT_Program_Design.dir/sys_admin/sys_admin_review_results.cpp.obj.d"
+  "2024_NJUPT_Program_Design_autogen"
+  "CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/ParseCache.txt"
   "lib2024_NJUPT_Program_Design.dll.a"
 )
 

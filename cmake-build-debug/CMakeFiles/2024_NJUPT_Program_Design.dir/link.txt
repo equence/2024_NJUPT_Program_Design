@@ -1,3 +1,3 @@
-C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\2024_NJUPT_Program_Design.dir/objects.a
-C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\2024_NJUPT_Program_Design.dir/objects.a @CMakeFiles\2024_NJUPT_Program_Design.dir\objects1.rsp
-C:\Qt\Tools\mingw1310_64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\2024_NJUPT_Program_Design.dir/objects.a -Wl,--no-whole-archive -o 2024_NJUPT_Program_Design.exe -Wl,--out-implib,lib2024_NJUPT_Program_Design.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\2024_NJUPT_Program_Design.dir\linkLibs.rsp
+"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\2024_NJUPT_Program_Design.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\2024_NJUPT_Program_Design.dir/objects.a @CMakeFiles\2024_NJUPT_Program_Design.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\2024_NJUPT_Program_Design.dir/objects.a -Wl,--no-whole-archive -o 2024_NJUPT_Program_Design.exe -Wl,--out-implib,lib2024_NJUPT_Program_Design.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\2024_NJUPT_Program_Design.dir\linkLibs.rsp

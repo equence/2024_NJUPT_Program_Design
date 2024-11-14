@@ -16,7 +16,7 @@ referee_submit_results::referee_submit_results(QWidget *parent) :
     ui->setupUi(this);
 
     results_db = QSqlDatabase::addDatabase("QSQLITE");
-    results_db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
+    results_db.setDatabaseName("../files/sqlite.db");
     results_db.open();
     refreshTable();
 

@@ -73,7 +73,7 @@ void Login::judge_Password() {
 int Login::check_password(char *Name ,char *password , int type, STU st[]) {
     int i=0;
     FILE *fp;
-    fp=fopen("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/login.txt","r");
+    fp=fopen("../files/login.txt","r");
     if ( fp == 0 )
     {
         QMessageBox::warning(this,tr("读取结果"),tr("用户文件丢失！"),QMessageBox::Ok);

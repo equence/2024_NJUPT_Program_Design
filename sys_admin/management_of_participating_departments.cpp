@@ -12,7 +12,7 @@ management_of_participating_departments::management_of_participating_departments
     QWidget(parent), ui(new Ui::management_of_participating_departments) {
     ui->setupUi(this);
     departments_db = QSqlDatabase::addDatabase("QSQLITE");
-    departments_db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
+    departments_db.setDatabaseName("../files/sqlite.db");
     departments_db.open();
     refreshTable();
 }

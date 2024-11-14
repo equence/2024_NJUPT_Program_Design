@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design
+CMAKE_SOURCE_DIR = D:\CLionProjects\2024_NJUPT_Program_Design
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug
+CMAKE_BINARY_DIR = D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug
 
 # Utility rule file for 2024_NJUPT_Program_Design_autogen.
 
@@ -67,12 +67,12 @@ include CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/progress.make
 
 CMakeFiles/2024_NJUPT_Program_Design_autogen: 2024_NJUPT_Program_Design_autogen/timestamp
 
-2024_NJUPT_Program_Design_autogen/timestamp: C:/Qt/6.8.0/mingw_64/bin/moc.exe
-2024_NJUPT_Program_Design_autogen/timestamp: C:/Qt/6.8.0/mingw_64/bin/uic.exe
+2024_NJUPT_Program_Design_autogen/timestamp: D:/Qt/6.8.0/mingw_64/bin/moc.exe
+2024_NJUPT_Program_Design_autogen/timestamp: D:/Qt/6.8.0/mingw_64/bin/uic.exe
 2024_NJUPT_Program_Design_autogen/timestamp: CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target 2024_NJUPT_Program_Design"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/fengjq/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target 2024_NJUPT_Program_Design"
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen D:/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenInfo.json Debug
+	"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E touch D:/CLionProjects/2024_NJUPT_Program_Design/cmake-build-debug/2024_NJUPT_Program_Design_autogen/timestamp
 
 2024_NJUPT_Program_Design_autogen: 2024_NJUPT_Program_Design_autogen/timestamp
 2024_NJUPT_Program_Design_autogen: CMakeFiles/2024_NJUPT_Program_Design_autogen
@@ -88,6 +88,6 @@ CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/clean:
 .PHONY : CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/clean
 
 CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles\2024_NJUPT_Program_Design_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\CLionProjects\2024_NJUPT_Program_Design D:\CLionProjects\2024_NJUPT_Program_Design D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles\2024_NJUPT_Program_Design_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/depend
 

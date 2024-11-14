@@ -12,7 +12,7 @@ college_admin_complaint::college_admin_complaint(QWidget *parent) :
     QWidget(parent), ui(new Ui::college_admin_complaint) {
     ui->setupUi(this);
     results_db = QSqlDatabase::addDatabase("QSQLITE");
-    results_db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
+    results_db.setDatabaseName("../files/sqlite.db");
     results_db.open();
     refreshTable();
 }

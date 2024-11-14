@@ -6,7 +6,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${PROJECT_SOURCE_DIR}/form)
-set(CMAKE_PREFIX_PATH "C:/Qt/6.8.0/mingw_64")
+set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/mingw_64")
 
 include_directories(SYSTEM cmake-build-debug/2024_NJUPT_Program_Design_autogen/include)
 include_directories(2024_NJUPT_Program_Design ${Qt6Widgets_INCLUDE_DIRS} ${Qt6Core_INCLUDE_DIRS} ${Qt6Gui_INCLUDE_DIRS})

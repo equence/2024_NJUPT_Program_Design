@@ -19,7 +19,7 @@ management_of_competition::management_of_competition(QWidget *parent) :
     connect(search, SIGNAL(sendSearchInfo(QString, QString)), this, SLOT(receiveSearchInfo(QString, QString)));
 
     competitions_db = QSqlDatabase::addDatabase("QSQLITE");
-    competitions_db.setDatabaseName("D:/CLionProjects/2024_NJUPT_Program_Design/files/sqlite.db");
+    competitions_db.setDatabaseName("../files/sqlite.db");
     competitions_db.open();
     refreshTable();
 }

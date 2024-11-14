@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design
+CMAKE_SOURCE_DIR = D:\CLionProjects\2024_NJUPT_Program_Design
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug
+CMAKE_BINARY_DIR = D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug
 
 # Utility rule file for 2024_NJUPT_Program_Design_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/2024_NJUPT_Program_Design_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/2024_NJUPT_Program_Design_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/2024_NJUPT_Program_Design_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug C:\Users\fengjq\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles\2024_NJUPT_Program_Design_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\CLionProjects\2024_NJUPT_Program_Design D:\CLionProjects\2024_NJUPT_Program_Design D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug D:\CLionProjects\2024_NJUPT_Program_Design\cmake-build-debug\CMakeFiles\2024_NJUPT_Program_Design_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/2024_NJUPT_Program_Design_autogen_timestamp_deps.dir/depend
 
