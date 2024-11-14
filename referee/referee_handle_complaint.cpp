@@ -35,6 +35,11 @@ void referee_handle_complaint::slot1() {
     //获取选中的行
     int row = ui->tableWidget->currentRow();
     //获取选中行的数据
+    if (row < 0) {
+        QMessageBox::warning(this, tr("修改失败"), tr("请选择一行进行修改！"), QMessageBox::Ok);
+        return;
+    }
+
     QString number_buf = ui->tableWidget->item(row, 0)->text();
     QString name_buf = ui->tableWidget->item(row, 1)->text();
     QString college_buf = ui->tableWidget->item(row, 2)->text();

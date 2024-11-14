@@ -9,7 +9,7 @@
 
 #include "referee_submit_results.h"
 #include "ui_referee_submit_results.h"
-
+#include <QMessageBox>
 
 referee_submit_results::referee_submit_results(QWidget *parent) :
     QWidget(parent), ui(new Ui::referee_submit_results) {
@@ -35,6 +35,11 @@ void referee_submit_results::slot1() {
 
 void referee_submit_results::slot2() {
     int curRow = ui->tableWidget->currentRow();
+
+    if (curRow < 0) {
+        QMessageBox::warning(this, tr("删除失败"), tr("请选择一行进行删除！"), QMessageBox::Ok);
+        return;
+    }
     queryString = QString("delete from results where 运动员号码 = '%1' and 项目编号 = '%2'")
             .arg(ui->tableWidget->item(curRow, 0)->text())
             .arg(ui->tableWidget->item(curRow, 3)->text());

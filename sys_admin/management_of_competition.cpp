@@ -6,7 +6,7 @@
 
 #include "management_of_competition.h"
 #include "ui_management_of_competition.h"
-
+#include <QMessageBox>
 
 int state = 0;
 
@@ -19,7 +19,7 @@ management_of_competition::management_of_competition(QWidget *parent) :
     connect(search, SIGNAL(sendSearchInfo(QString, QString)), this, SLOT(receiveSearchInfo(QString, QString)));
 
     competitions_db = QSqlDatabase::addDatabase("QSQLITE");
-    competitions_db.setDatabaseName("../files/sqlite.db");
+    competitions_db.setDatabaseName("D:/Desktop/program/2024_NJUPT_Program_Design-master/files/sqlite.db");
     competitions_db.open();
     refreshTable();
 }
@@ -37,6 +37,12 @@ void management_of_competition::pushButton_Add_clicked() {
 void management_of_competition::pushButton_Delete_clicked() {
     //获取选中的行
     int curRow = ui->tableWidget->currentRow();
+
+    if (curRow < 0) {
+        QMessageBox::warning(this, tr("删除失败"), tr("请选择一行进行删除！"), QMessageBox::Ok);
+        return;
+    }
+
     QSqlQuery query;
     queryString = QString("delete from departments where 项目名称 = '%1'").arg(ui->tableWidget->item(curRow, 0)->text());
     query.exec(queryString);
@@ -47,6 +53,10 @@ void management_of_competition::pushButton_Delete_clicked() {
 void management_of_competition::pushButton_Modify_clicked() {
     //获取选中的行
     int row = ui->tableWidget->currentRow();
+    if (row < 0) {
+        QMessageBox::warning(this, tr("修改失败"), tr("请选择一行进行修改！"), QMessageBox::Ok);
+        return;
+    }
     //获取选中行的数据
     QString name_buf = ui->tableWidget->item(row, 0)->text();
     QString group_buf = ui->tableWidget->item(row, 1)->text();
