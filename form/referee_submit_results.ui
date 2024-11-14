@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>referee_submit_results</class>
+ <widget class="QWidget" name="referee_submit_results">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>referee_submit_results</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>420</width>
+     <height>460</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>运动员号码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>运动员姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>院系编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>项目编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>名次</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>状态</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新增运动员成绩</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>40</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除所选项成绩</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>referee_submit_results</receiver>
+   <slot>slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>referee_submit_results</receiver>
+   <slot>slot2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot1()</slot>
+  <slot>slot2()</slot>
+ </slots>
+</ui>

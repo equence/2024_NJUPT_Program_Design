@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>college_admin_check_results</class>
+ <widget class="QWidget" name="college_admin_check_results">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>college_admin_check_results</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget_byAthelte">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>591</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>运动员号码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>运动员姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>院系编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>项目编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>排名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>状态</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_byEvent">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>230</y>
+     <width>441</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>运动员号码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>运动员姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>院系编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>项目编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>排名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>状态</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>260</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>240</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询项目</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>college_admin_check_results</receiver>
+   <slot>slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>494</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>496</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot1()</slot>
+ </slots>
+</ui>

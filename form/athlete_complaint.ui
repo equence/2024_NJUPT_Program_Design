@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>athlete_complaint</class>
+ <widget class="QWidget" name="athlete_complaint">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>athlete_complaint</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>420</width>
+     <height>460</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>运动员号码</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>运动员姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>院系编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>项目编号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>排名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>状态</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交申诉</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>athlete_complaint</receiver>
+   <slot>slot1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>523</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot1()</slot>
+ </slots>
+</ui>
