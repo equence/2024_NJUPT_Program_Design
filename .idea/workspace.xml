@@ -23,51 +23,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="197aff1b-d554-4b9a-b088-90f5acfb7d85" name="更改" comment="添加.gitignore">
-      <change afterPath="$PROJECT_DIR$/.idea/QtSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="197aff1b-d554-4b9a-b088-90f5acfb7d85" name="更改" comment="修改README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/athlete/athlete_check_results.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/athlete/athlete_check_results.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/athlete/athlete_check_results.h" beforeDir="false" afterPath="$PROJECT_DIR$/athlete/athlete_check_results.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/athlete/athlete_complaint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/athlete/athlete_complaint.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/2024_NJUPT_Program_Design.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2024_NJUPT_Program_Design.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/2024_NJUPT_Program_Design_autogen/deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2024_NJUPT_Program_Design_autogen/deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/main.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/main.cpp.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/AutogenInfo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/compiler_depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2024_NJUPT_Program_Design_autogen.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college_admin/college_admin_check_results.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/college_admin/college_admin_check_results.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college_admin/college_admin_check_results.h" beforeDir="false" afterPath="$PROJECT_DIR$/college_admin/college_admin_check_results.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/college_admin/college_admin_complaint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/college_admin/college_admin_complaint.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/login.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/login.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/sqlite.db" beforeDir="false" afterPath="$PROJECT_DIR$/files/sqlite.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form/athlete_check_results.ui" beforeDir="false" afterPath="$PROJECT_DIR$/form/athlete_check_results.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form/college_admin_check_results.ui" beforeDir="false" afterPath="$PROJECT_DIR$/form/college_admin_check_results.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form/management_of_participating_departments.ui" beforeDir="false" afterPath="$PROJECT_DIR$/form/management_of_participating_departments.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form/sys_admin_check_results.ui" beforeDir="false" afterPath="$PROJECT_DIR$/form/sys_admin_check_results.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/login.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.h" beforeDir="false" afterPath="$PROJECT_DIR$/login.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_sort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/result_sort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_admin/management_of_competition.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sys_admin/management_of_competition.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/result_sort.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sys_admin/management_of_participating_departments.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sys_admin/management_of_participating_departments.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sys_admin/sys_admin_check_results.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sys_admin/sys_admin_check_results.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_admin/sys_admin_check_results.h" beforeDir="false" afterPath="$PROJECT_DIR$/sys_admin/sys_admin_check_results.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_admin/sys_admin_handle_complaint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sys_admin/sys_admin_handle_complaint.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys_admin/sys_admin_review_results.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sys_admin/sys_admin_review_results.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/update_scores.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/update_scores.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,18 +98,6 @@
     &quot;accountId&quot;: &quot;a6edddf1-4ed5-41af-b9cd-5cbc70251229&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/login.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/management_of_competition.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/management_of_competition_cell.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/management_of_competiton_search.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/management_of_participating_departments.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/sys_admin_check_results.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/sys_admin_handle_complaint.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/sys_admin_mainwindow.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/sys_admin/sys_admin_review_results.cpp" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -176,6 +136,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -193,10 +158,7 @@
       <workItem from="1731562419729" duration="2211000" />
       <workItem from="1731578127896" duration="40000" />
       <workItem from="1731578227862" duration="720000" />
-      <workItem from="1731585522626" duration="1747000" />
-      <workItem from="1731587389208" duration="5149000" />
-      <workItem from="1731595026334" duration="1560000" />
-      <workItem from="1731596608989" duration="2000" />
+      <workItem from="1731630534732" duration="3585000" />
     </task>
     <task id="LOCAL-00001" summary="some changes by fjq">
       <option name="closed" value="true" />
@@ -206,23 +168,7 @@
       <option name="project" value="LOCAL" />
       <updated>1731562378167</updated>
     </task>
-    <task id="LOCAL-00002" summary="some changes by fjq">
-      <option name="closed" value="true" />
-      <created>1731581477722</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1731581477722</updated>
-    </task>
-    <task id="LOCAL-00003" summary="添加.gitignore">
-      <option name="closed" value="true" />
-      <created>1731581558767</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1731581558767</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +181,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some changes by fjq" />
-    <MESSAGE value="添加.gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加.gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes by fjq" />
   </component>
 </project>

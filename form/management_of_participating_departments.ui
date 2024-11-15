@@ -84,6 +84,16 @@
      <string>院系名称</string>
     </property>
    </column>
+   <column>
+    <property name="text">
+     <string>院系总分</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>院系排名</string>
+    </property>
+   </column>
   </widget>
   <widget class="QLineEdit" name="lineEditCode">
    <property name="geometry">

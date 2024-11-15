@@ -10,10 +10,8 @@ int main(int argc, char *argv[]) {
     Login l;
     l.show();
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("../files/sqlite.db");
-    db.open();
-    updateRankings(db);
+
+    updateRankings();
     updateDepartmentScores();
     return QApplication::exec();
 }

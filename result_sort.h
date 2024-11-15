@@ -20,6 +20,6 @@ struct AthleteResult {
 bool compareResults(const AthleteResult &a, const AthleteResult &b);
 
 // 声明更新排名的函数
-void updateRankings(QSqlDatabase &db);
+void updateRankings();
 
 #endif // UPDATE_RANKINGS_H

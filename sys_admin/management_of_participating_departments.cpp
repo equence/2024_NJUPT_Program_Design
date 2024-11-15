@@ -119,13 +119,18 @@ void management_of_participating_departments::refreshTable() {
     ui->tableWidget->setRowCount(0);
     queryString = QString("select * from departments");
     QSqlQuery query(queryString);
+
     int curRow = 0;
     while(query.next()) {
         QString code = query.value("院系编号").toString();
         QString name = query.value("院系名称").toString();
+        QString score = query.value("院系总分").toString();
+        QString rank = query.value("院系排名").toString();
         ui->tableWidget->insertRow(curRow);
         ui->tableWidget->setItem(curRow, 0, new QTableWidgetItem(code));
         ui->tableWidget->setItem(curRow, 1, new QTableWidgetItem(name));
+        ui->tableWidget->setItem(curRow, 2, new QTableWidgetItem(score));
+        ui->tableWidget->setItem(curRow, 3, new QTableWidgetItem(rank));
         curRow++;
     }
     updateDepartmentScores();
