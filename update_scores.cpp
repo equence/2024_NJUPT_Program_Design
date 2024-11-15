@@ -27,11 +27,7 @@ void updateDepartmentScores() {
     }
 
     // 查询每个院系的总分
-    QString queryString = R"(
-        SELECT 院系编号, SUM(分数) as 总分
-        FROM results
-        GROUP BY 院系编号
-    )";
+    QString queryString = ("SELECT 院系编号, SUM(分数) as 总分 FROM results GROUP BY 院系编号");
     QSqlQuery query(queryString);
 
     // 存储每个院系的总分
@@ -54,10 +50,11 @@ void updateDepartmentScores() {
     // 将总分和排名更新到 departments 表中
     for (const auto &dept : departmentScores) {
         QSqlQuery updateQuery;
-        updateQuery.prepare("UPDATE departments SET 院系总分 = :totalScore, 院系排名 = :ranking WHERE 院系编码 = :departmentCode");
+        updateQuery.prepare("UPDATE departments SET 院系总分 = :totalScore, 院系排名 = :ranking WHERE 院系编号 = :departmentCode");
         updateQuery.bindValue(":totalScore", dept.totalScore);
         updateQuery.bindValue(":ranking", dept.ranking);
         updateQuery.bindValue(":departmentCode", dept.departmentCode);
+        qDebug() << "UPDATE departments SET 院系总分 = " << dept.totalScore << ", 院系排名 = " << dept.ranking << " WHERE 院系编号 = " << dept.departmentCode;
         updateQuery.exec();
     }
 

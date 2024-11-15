@@ -27,7 +27,7 @@ sys_admin_check_results::~sys_admin_check_results() {
 
 void sys_admin_check_results::slot1() {
     //排序
-    updateRankings(results_db);
+    updateRankings();
     updateDepartmentScores();
     refreshTable();
 }

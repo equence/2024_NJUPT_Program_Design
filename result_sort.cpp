@@ -26,11 +26,13 @@ bool compareResults(const AthleteResult &a, const AthleteResult &b) {
     return a.event < b.event; // 项目编号从小到大排序
 }
 
-void updateRankings(QSqlDatabase &db) {
-    // if (!db.open()) {
-    //     std::cerr << "Failed to open the database." << std::endl;
-    //     return;
-    // }
+void updateRankings() {
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("../files/sqlite.db");
+    if (!db.open()) {
+        std::cerr << "Failed to open the database." << std::endl;
+        return;
+    }
 
     QSqlQuery query("SELECT * FROM results");
     std::vector<AthleteResult> results;
